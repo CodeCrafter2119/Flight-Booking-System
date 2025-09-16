@@ -1,0 +1,322 @@
+/* General Styles */
+.booking-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-header {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Form Layout */
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+/* Flight Info Card */
+.flight-info-card {
+  grid-column: span 2;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.flight-info-header {
+  grid-column: span 2;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* Form Elements */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.form-input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.form-input[readonly] {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.error-text {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* Submit Button */
+.submit-button {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #2980b9, #1a252f);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* BookedFlight.css */
+
+.flight-booking-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flight-listings {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flight-listings h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.flights-table-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+}
+
+.flights-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.flights-table th, 
+.flights-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.flights-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.flights-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.select-flight-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.select-flight-btn:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+}
+
+.flight-search-help {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.flight-search-help p {
+    margin-bottom: 1rem;
+    color: #34495e;
+}
+
+.search-box {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.promo-banner {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.promo-banner p {
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.booking-form-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.booking-container {
+    padding: 2rem;
+}
+
+/* Rest of your existing booking form styles... */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .booking-form-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .flight-booking-page {
+        flex-direction: column;
+    }
+    
+    .booking-form-container {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .flight-listings,
+    .booking-container {
+        padding: 1rem;
+    }
+    
+    .flights-table th, 
+    .flights-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Add these styles to your existing CSS */
+
+.flights-table th:nth-child(1),
+.flights-table td:nth-child(1) {
+    width: 100px;
+}
+
+.flights-table th:nth-child(8),
+.flights-table td:nth-child(8) {
+    width: 80px;
+    text-align: right;
+}
+
+.passenger-section {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.passenger-subheader {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .flights-table th:nth-child(5),
+    .flights-table td:nth-child(5),
+    .flights-table th:nth-child(6),
+    .flights-table td:nth-child(6) {
+        display: none;
+    }
+}

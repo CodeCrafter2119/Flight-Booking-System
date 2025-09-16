@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  background: url('./components/image/Screenshot\ 2025-07-25\ 224826.png');
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}

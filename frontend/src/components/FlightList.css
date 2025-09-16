@@ -1,0 +1,296 @@
+/* Modern IndiGo-inspired Styles */
+.flight-app-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.app-header {
+  color: #06038D; /* IndiGo blue */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  color: #06038D;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.radio-options {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.search-input:focus {
+  border-color: #06038D;
+  outline: none;
+}
+
+.search-button {
+  background-color: #FF6B00; /* IndiGo orange */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #e05d00;
+}
+
+.divider {
+  border-top: 1px dashed #ddd;
+  margin: 1.5rem 0;
+}
+
+.passenger-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.passenger-count {
+  font-weight: 600;
+}
+
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.flight-table th {
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.flight-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.book-button {
+  background-color: #FF6B00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #e05d00;
+}
+
+.chat-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #06038D;
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.chat-body {
+  padding: 1rem;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 0.75rem;
+  max-width: 80%;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.user-message {
+  background-color: #06038D;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+}
+
+.bot-message {
+  background-color: #f5f5f5;
+  margin-right: auto;
+  border-bottom-left-radius: 0;
+}
+
+.chat-input-container {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.recent-searches {
+  margin-top: 1.5rem;
+}
+
+.recent-search-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.offer-banner {
+  background: linear-gradient(135deg, #06038D, #FF6B00);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+/* Header and Profile Styles */
+.app-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.profile-icon:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 220px;
+  z-index: 1000;
+  padding: 15px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-info {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.profile-email, .profile-id {
+  font-size: 13px;
+  color: #666;
+  margin: 3px 0;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.profile-button:hover {
+  background-color: #f5f5f5;
+}
+
+.logout-button {
+  color: #dc3545;
+}
+
+.logout-button:hover {
+  background-color: #f8d7da;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile-section {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+}

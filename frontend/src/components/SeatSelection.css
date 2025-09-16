@@ -1,0 +1,257 @@
+.seat-selection-page {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.connection-status {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.connection-status.connected {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.connection-status.disconnected {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.retry-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.retry-btn:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.debug-info {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.debug-info h4 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.booking-summary {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.booking-summary h3 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.summary-details p {
+    margin: 5px 0;
+}
+
+.seat-selection-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.airplane-layout {
+    flex: 2;
+}
+
+.selection-info {
+    flex: 1;
+}
+
+.airplane {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #dee2e6;
+}
+
+.cockpit-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cockpit {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.aisle {
+    width: 40px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.seat:hover:not(.booked) {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+
+.seat.available {
+    background-color: #ffffff;
+    color: #495057;
+}
+
+.seat.selected {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.seat.booked {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+    cursor: not-allowed;
+}
+
+.seat.emergency {
+    background-color: #ffc107;
+    color: #212529;
+    border-color: #ffc107;
+}
+
+.seat-legend {
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 10px;
+}
+
+.legend-item .seat {
+    cursor: default;
+}
+
+.selected-seats-info {
+    background-color: #e7f3ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.selected-seats-info h4 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-back, .btn-confirm {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}
+
+.btn-confirm {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-confirm:hover:not(.disabled) {
+    background-color: #218838;
+}
+
+.btn-confirm.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.connection-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
