@@ -9,15 +9,15 @@
 4.🔐 Secure JWT authentication • Live seat mapping • Payment processing • AWS Deployable
 
 ✅ Real-time WebSocket seat selection  
-✅ Docker (development : mysql) 
+✅ Docker (development : mysql)  
 ✅ Razorpay payment integration  
 ✅ Ollama AI travel assistant (development)  
 ✅ Mock AI travel assistant (AWS deployment)  
 ✅ JWT OAuth2 security  
 ✅ React frontend + Spring Boot backend  
 ✅ MySQL database with optimized queries  
-✅ AWS Elastic Beanstalk deployment ready(For Backend and Database)   
-✅ AWS S3 (For frontend) 
+✅ AWS Elastic Beanstalk deployment ready(For Backend and Database)  
+✅ AWS S3 (For frontend)  
 ✅ Multi-role system (Admin + User)  
 
    baseURL : http://Flight-booking-system-env.eba-utt8xhke.ap-south-1.elasticbeanstalk.com   
