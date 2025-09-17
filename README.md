@@ -1,4 +1,4 @@
-# FlightEase - Complete Flight Booking System with Real-time Seat Selection
+# SkyBooker - Complete Flight Booking System with Real-time Seat Selection
 
 1.✈️ Real-time seat booking • Secure payments • AI-powered travel assistant
 
